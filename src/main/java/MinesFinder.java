@@ -21,6 +21,10 @@ public class MinesFinder extends JFrame {
         btnJogoFacil.addActionListener(this::btnJogoFacilActionPerformed);
         btnJogoMedio.addActionListener(this::btnJogoMedioActionPerformed);
         btnJogoDificil.addActionListener(this::btnJogoDificilActionPerformed);
+
+        //codigo de teste de teste
+        CampoMinado campo = new CampoMinado(10,10,10);
+        System.out.println("linhas "+campo.getNrLinhas());
     }
 
     private void btnSairActionPerformed(ActionEvent e) {
@@ -28,14 +32,16 @@ public class MinesFinder extends JFrame {
     }
 
     private void btnJogoFacilActionPerformed(ActionEvent e) {
-        var janela = new JanelaDeJogo();
+        var janela = new JanelaDeJogo(new CampoMinado(9,9,10));
         janela.setVisible(true);
     }
     private void btnJogoMedioActionPerformed(ActionEvent e) {
-        // TODO
+        var janela = new JanelaDeJogo(new CampoMinado(16,16,40));
+        janela.setVisible(true);
     }
     private void btnJogoDificilActionPerformed(ActionEvent e) {
-        // TODO
+        var janela = new JanelaDeJogo(new CampoMinado(16,30,90));
+        janela.setVisible(true);
     }
 
 

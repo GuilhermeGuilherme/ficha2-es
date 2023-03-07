@@ -125,7 +125,7 @@
             </constraints>
             <properties>
               <icon value="images/minas_facil.png"/>
-              <text value="Button"/>
+              <text value="Jogo Fácil"/>
             </properties>
           </component>
           <component id="5ef00" class="javax.swing.JButton" binding="btnSair">
@@ -142,7 +142,7 @@
             </constraints>
             <properties>
               <icon value="images/minas_medio.png"/>
-              <text value="Button"/>
+              <text value="Jogo Médio"/>
             </properties>
           </component>
           <component id="3ddc8" class="javax.swing.JButton" binding="btnJogoDificil">
@@ -151,7 +151,7 @@
             </constraints>
             <properties>
               <icon value="images/minas_dificil.png"/>
-              <text value="Button"/>
+              <text value="Jogo Difícil"/>
             </properties>
           </component>
         </children>

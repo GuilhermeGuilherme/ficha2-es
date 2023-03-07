@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f51b1c1-2ec5-476b-8913-307f18deea78" name="Changes" comment="minesfinder btnSair">
-      <change afterPath="$PROJECT_DIR$/src/main/java/JanelaDeJogo.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/JanelaDeJogo.java" afterDir="false" />
+    <list default="true" id="1f51b1c1-2ec5-476b-8913-307f18deea78" name="Changes" comment="minesfinder nova janela">
+      <change afterPath="$PROJECT_DIR$/src/main/java/BotaoCampoMinado.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CampoMinado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CampoMinado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JanelaDeJogo.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JanelaDeJogo.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JanelaDeJogo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JanelaDeJogo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MinesFinder.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinesFinder.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MinesFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinesFinder.java" afterDir="false" />
     </list>
@@ -94,7 +96,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678188479848</updated>
-      <workItem from="1678188480973" duration="5055000" />
+      <workItem from="1678188480973" duration="8156000" />
     </task>
     <task id="LOCAL-00001" summary="minesfinder janela">
       <created>1678191015302</created>
@@ -110,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678192147270</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="minesfinder nova janela">
+      <created>1678193718334</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678193718334</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +139,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="minesfinder janela" />
     <MESSAGE value="minesfinder btnSair" />
-    <option name="LAST_COMMIT_MESSAGE" value="minesfinder btnSair" />
+    <MESSAGE value="minesfinder nova janela" />
+    <option name="LAST_COMMIT_MESSAGE" value="minesfinder nova janela" />
   </component>
 </project>
