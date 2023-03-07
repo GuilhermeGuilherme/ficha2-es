@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f51b1c1-2ec5-476b-8913-307f18deea78" name="Changes" comment="minesfinder janela">
+    <list default="true" id="1f51b1c1-2ec5-476b-8913-307f18deea78" name="Changes" comment="minesfinder btnSair">
+      <change afterPath="$PROJECT_DIR$/src/main/java/JanelaDeJogo.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/JanelaDeJogo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MinesFinder.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinesFinder.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MinesFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinesFinder.java" afterDir="false" />
@@ -92,7 +94,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678188479848</updated>
-      <workItem from="1678188480973" duration="3529000" />
+      <workItem from="1678188480973" duration="5055000" />
     </task>
     <task id="LOCAL-00001" summary="minesfinder janela">
       <created>1678191015302</created>
@@ -101,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678191015302</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="minesfinder btnSair">
+      <created>1678192147270</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678192147270</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,6 +129,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="minesfinder janela" />
-    <option name="LAST_COMMIT_MESSAGE" value="minesfinder janela" />
+    <MESSAGE value="minesfinder btnSair" />
+    <option name="LAST_COMMIT_MESSAGE" value="minesfinder btnSair" />
   </component>
 </project>
