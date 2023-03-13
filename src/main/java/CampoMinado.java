@@ -132,6 +132,13 @@ public class CampoMinado {
         }
         return;
     }
+
+    public void desmarcarQuadricula(int x, int y) {
+        if (estado[x][y] == DUVIDA || estado[x][y] == MARCADO){
+            estado[x][y] = TAPADO;
+        }
+        return;
+    }
     private int contarMinasVizinhas(int x, int y) {
         var numMinasVizinhas = 0;
         for (var i = Math.max(0, x - 1); i < Math.min(nrLinhas, x + 2); ++i) {
@@ -166,4 +173,6 @@ public class CampoMinado {
         }
         return true;
     }
+
+
 }
