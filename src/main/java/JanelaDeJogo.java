@@ -7,6 +7,9 @@ public class JanelaDeJogo extends JFrame{
     private BotaoCampoMinado[][] botoes;
     private CampoMinado campoMinado;
 
+
+
+
     public JanelaDeJogo(CampoMinado campoMinado){
 
         this.campoMinado = campoMinado;

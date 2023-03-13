@@ -16,10 +16,14 @@ public class BotaoCampoMinado extends JButton {
                 setBackground(Color.LIGHT_GRAY);
                 break;
             case CampoMinado.TAPADO:
-                setText("");
+                setText("ola");
                 setBackground(null);
                 break;
-            // Complete o código que falta …
+            case CampoMinado.DUVIDA:
+                setText("?");
+                setBackground(Color.yellow);
+                break;
+            //todo campos cores
             default:
                 setText(String.valueOf(estado));
                 setBackground(Color.LIGHT_GRAY);
