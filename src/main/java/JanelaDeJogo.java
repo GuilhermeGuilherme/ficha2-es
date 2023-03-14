@@ -1,20 +1,19 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
+import java.awt.event.*;
 
 public class JanelaDeJogo extends JFrame{
     private JPanel painelJogo;
 
     private BotaoCampoMinado[][] botoes;
     private CampoMinado campoMinado;
+    private  TabelaRecordes recordes;
 
 
 
-
-    public JanelaDeJogo(CampoMinado campoMinado){
+    public JanelaDeJogo(CampoMinado campoMinado, TabelaRecordes tabela){
         this.campoMinado = campoMinado;
+        this.recordes = tabela;
 
         var nrLinhas = campoMinado.getNrLinhas();
         var nrColunas = campoMinado.getNrColunas();
@@ -29,6 +28,7 @@ public class JanelaDeJogo extends JFrame{
                 botoes[linha][coluna] = new BotaoCampoMinado(linha, coluna);
                 botoes[linha][coluna].addActionListener(this::btnCampoMinadoActionPerformed);
                 botoes[linha][coluna].addMouseListener(mouseListener);
+                botoes[linha][coluna].addKeyListener(keyListener);
                 painelJogo.add(botoes[linha][coluna]);
             }
         }
@@ -52,10 +52,16 @@ public class JanelaDeJogo extends JFrame{
             if (campoMinado.isJogadorDerrotado())
                 JOptionPane.showMessageDialog(null, "Oh, rebentou uma mina",
                         "Perdeu!", JOptionPane.INFORMATION_MESSAGE);
-            else
+            else{
                 JOptionPane.showMessageDialog(null, "Parabéns. Conseguiu descobrir todas as minas em "+
-            (campoMinado.getDuracaoJogo()/1000)+" segundos",
-                    "Vitória", JOptionPane.INFORMATION_MESSAGE);
+                                (campoMinado.getDuracaoJogo()/1000)+" segundos",
+                        "Vitória", JOptionPane.INFORMATION_MESSAGE);
+                boolean novoRecorde=campoMinado.getDuracaoJogo()<recordes.getTempoJogo();
+                if (novoRecorde) {
+                    String nome=JOptionPane.showInputDialog("Introduza o seu nome");
+                    recordes.setRecorde(nome, campoMinado.getDuracaoJogo());
+                }
+            }
             setVisible(false);
         }
     }
@@ -74,15 +80,10 @@ public class JanelaDeJogo extends JFrame{
             var y = botao.getLinha();
 
             var estadoQuadricula = campoMinado.getEstadoQuadricula(x, y);
-            if (estadoQuadricula == CampoMinado.TAPADO) {
-                campoMinado.marcarComoTendoMina(x, y);
-            } else if (estadoQuadricula == CampoMinado.MARCADO) {
-                campoMinado.marcarComoSuspeita(x, y);
-            } else if (estadoQuadricula == CampoMinado.DUVIDA) {
-                campoMinado.desmarcarQuadricula(x, y);
-            }
-            actualizarEstadoBotoes();
-        }
+            marcarQuadricula(x,y);
+        };
+
+
         @Override
         public void mouseReleased(MouseEvent e) {
         }
@@ -93,6 +94,50 @@ public class JanelaDeJogo extends JFrame{
         public void mouseExited(MouseEvent e) {
         }
     };
+
+    KeyListener keyListener = new KeyListener() {
+
+        @Override
+        public void keyTyped(KeyEvent e) {
+        }
+        @Override
+        public void keyPressed(KeyEvent e) {
+            int nrLinhas = campoMinado.getNrLinhas();
+            int nrColunas= campoMinado.getNrColunas();
+
+            var botao = (BotaoCampoMinado) e.getSource();
+            var x = botao.getLinha(); // ou var linha = botao.getLinha();
+            var y = botao.getColuna(); // ou var coluna = botao.getColuna();
+
+            switch (e.getKeyCode()) {
+                case KeyEvent.VK_UP -> botoes[--x < 0 ? nrLinhas - 1 :
+                        x][y].requestFocus();
+                case KeyEvent.VK_DOWN -> botoes[(x + 1) %
+                        nrLinhas][y].requestFocus();
+                case KeyEvent.VK_LEFT -> botoes[x][--y < 0 ? nrColunas - 1 :
+                        y].requestFocus();
+                case KeyEvent.VK_RIGHT -> botoes[x][(y + 1) %
+                        nrColunas].requestFocus();
+                case KeyEvent.VK_M -> {
+                    marcarQuadricula(x,y);
+                }
+            }
+        }
+        @Override
+        public void keyReleased(KeyEvent e) {
+        }
+    };
+
+    private void marcarQuadricula(int x, int y){
+        switch (campoMinado.getEstadoQuadricula(x, y)) {
+            case CampoMinado.TAPADO -> campoMinado.marcarComoTendoMina(x, y);
+            case CampoMinado.MARCADO -> campoMinado.marcarComoSuspeita(x, y);
+            case CampoMinado.DUVIDA -> campoMinado.desmarcarQuadricula(x, y);
+        }
+        actualizarEstadoBotoes();
+    }
+
+
     private void actualizarEstadoBotoes() {
         for (int x = 0; x < campoMinado.getNrLinhas(); x++) {
             for (int y = 0; y < campoMinado.getNrColunas(); y++) {

@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f51b1c1-2ec5-476b-8913-307f18deea78" name="Changes" comment="minesfinder campo minado estado botoes">
+    <list default="true" id="1f51b1c1-2ec5-476b-8913-307f18deea78" name="Changes" comment="minesfinder campo minado acoes teclado">
+      <change afterPath="$PROJECT_DIR$/src/main/java/TabelaRecordes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/BotaoCampoMinado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BotaoCampoMinado.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/JanelaDeJogo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JanelaDeJogo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MinesFinder.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinesFinder.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MinesFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinesFinder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,22 +44,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "172",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "262",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH&quot;: &quot;172&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;262&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="MinesFinder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MinesFinder" />
@@ -96,7 +97,10 @@
       <updated>1678188479848</updated>
       <workItem from="1678188480973" duration="8278000" />
       <workItem from="1678275215231" duration="603000" />
-      <workItem from="1678726614721" duration="7988000" />
+      <workItem from="1678726614721" duration="8170000" />
+      <workItem from="1678786278096" duration="79000" />
+      <workItem from="1678786468605" duration="676000" />
+      <workItem from="1678792535491" duration="4651000" />
     </task>
     <task id="LOCAL-00001" summary="minesfinder janela">
       <created>1678191015302</created>
@@ -133,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678747204205</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="minesfinder campo minado acoes rato">
+      <created>1678748804023</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1678748804023</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +167,8 @@
     <MESSAGE value="minesfinder nova janela" />
     <MESSAGE value="minesfinder campo minado janela" />
     <MESSAGE value="minesfinder campo minado estado botoes" />
-    <option name="LAST_COMMIT_MESSAGE" value="minesfinder campo minado estado botoes" />
+    <MESSAGE value="minesfinder campo minado acoes rato" />
+    <MESSAGE value="minesfinder campo minado acoes teclado" />
+    <option name="LAST_COMMIT_MESSAGE" value="minesfinder campo minado acoes teclado" />
   </component>
 </project>

@@ -161,6 +161,7 @@ public class CampoMinado {
         estado[x][y-1] = VAZIO;
         estado[x-1][y-1] = VAZIO;
         estado[x-1][y] = VAZIO;
+        //todo corrigir isto
     }
 
     private boolean isVitoria() {
