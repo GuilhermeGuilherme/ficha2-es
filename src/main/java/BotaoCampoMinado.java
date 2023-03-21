@@ -40,7 +40,11 @@ public class BotaoCampoMinado extends JButton {
                 setText("!");
                 setBackground(Color.red);
                 break;
-            //todo campos cores
+            case CampoMinado.REBENTADO:
+                setText("*");
+                setBackground(Color.ORANGE);
+                break;
+                //todo corrigir cor rebentado
             default:
                 setText(String.valueOf(estado));
                 setBackground(Color.LIGHT_GRAY);
