@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f51b1c1-2ec5-476b-8913-307f18deea78" name="Changes" comment="minesfinder campo minado ficheiros">
-      <change afterPath="$PROJECT_DIR$/src/main/java/TabelaRecordesListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1f51b1c1-2ec5-476b-8913-307f18deea78" name="Changes" comment="minesfinder campo minado ficheiros final">
       <change beforePath="$PROJECT_DIR$/src/main/java/BotaoCampoMinado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BotaoCampoMinado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CampoMinado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CampoMinado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MinesFinder.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinesFinder.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MinesFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinesFinder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TabelaRecordes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TabelaRecordes.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +100,7 @@
       <workItem from="1678786278096" duration="79000" />
       <workItem from="1678786468605" duration="676000" />
       <workItem from="1678792535491" duration="8724000" />
-      <workItem from="1679397409910" duration="518000" />
+      <workItem from="1679397409910" duration="648000" />
     </task>
     <task id="LOCAL-00001" summary="minesfinder janela">
       <created>1678191015302</created>
@@ -157,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678797623664</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="minesfinder campo minado ficheiros final">
+      <created>1679398043565</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1679398043565</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,6 +185,7 @@
     <MESSAGE value="minesfinder campo minado acoes teclado" />
     <MESSAGE value="minesfinder campo minado TabelaRecordes" />
     <MESSAGE value="minesfinder campo minado ficheiros" />
-    <option name="LAST_COMMIT_MESSAGE" value="minesfinder campo minado ficheiros" />
+    <MESSAGE value="minesfinder campo minado ficheiros final" />
+    <option name="LAST_COMMIT_MESSAGE" value="minesfinder campo minado ficheiros final" />
   </component>
 </project>
